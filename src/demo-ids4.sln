@@ -9,8 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGallery", "ImageGaller
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4983A4FF-F8EC-4DB0-BF3A-666A3B121FCC}"
 	ProjectSection(SolutionItems) = preProject
+		..\note.md = ..\note.md
 		..\readme.md = ..\readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyIDP", "MyIDP\MyIDP.csproj", "{D7A8DB50-1C2C-42AC-AC85-42BA4720221C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IDP", "IDP", "{7BE04387-FAE5-417E-8D96-1ACA5E3F0C41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +31,16 @@ Global
 		{B8E16276-FEA1-4A93-AFEA-81CA62577A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8E16276-FEA1-4A93-AFEA-81CA62577A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8E16276-FEA1-4A93-AFEA-81CA62577A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7A8DB50-1C2C-42AC-AC85-42BA4720221C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7A8DB50-1C2C-42AC-AC85-42BA4720221C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7A8DB50-1C2C-42AC-AC85-42BA4720221C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7A8DB50-1C2C-42AC-AC85-42BA4720221C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D7A8DB50-1C2C-42AC-AC85-42BA4720221C} = {7BE04387-FAE5-417E-8D96-1ACA5E3F0C41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C15D5D5A-B1FB-4C85-954D-9F6A8F3D52F7}

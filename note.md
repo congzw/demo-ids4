@@ -17,3 +17,9 @@
 - securely delivering tokens to different application types
 - ...
 
+## OIDC
+
+### endpoints
+
+- authorization endpoint
+- token endpoint

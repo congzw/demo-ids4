@@ -31,7 +31,7 @@
 - download IdentityServer4.Templates 2.7.0 or
 - download IdentityServer4.Quickstart.UI 2.5.0 and copy files to project
 - config Startup
-
+- todo: setup TLS?
 
 ``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/IdentityServer/IdentityServer4.Quickstart.UI/master/getmaster.ps1'))
@@ -62,6 +62,10 @@ public class Startup
 }
 ```
 
+## DEMO
 
-
-http://localhost:8309/.well-known/openid-configuration
+- MyIDP => http://localhost:8309
+- ImageGallery => http://localhost:2047
+- NbSites.Web => http://localhost:12060
+- public static bool AutomaticRedirectAfterSignOut = false;
+- http://localhost:8309/.well-known/openid-configuration

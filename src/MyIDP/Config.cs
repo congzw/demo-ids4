@@ -17,7 +17,7 @@ namespace MyIDP
                 {
                     SubjectId = "d860efca-22d9-47fd-8249-791ba61b07c7",
                     Username = "Frank",
-                    Password = "password",
+                    Password = "111",
 
                     Claims = new List<Claim>
                     {
@@ -33,7 +33,7 @@ namespace MyIDP
                 {
                     SubjectId = "b7539694-97e7-4dfe-84da-b4256e1ff5c7",
                     Username = "Claire",
-                    Password = "password",
+                    Password = "111",
 
                     Claims = new List<Claim>
                     {
@@ -84,11 +84,17 @@ namespace MyIDP
 
             };
         }
-        
+
+
         public static IEnumerable<Client> GetClients()
         {
+            //MyIDP => http://localhost:8309
+            //ImageGallery => http://localhost:2047
+            //NbSites.Web => http://localhost:12060
             return new List<Client>()
             {
+             
+                //RedirectUris = { "http://localhost:53846//signin-oidc" },
                 new Client
                 {
                     ClientName = "Image Gallery",
@@ -103,11 +109,11 @@ namespace MyIDP
                     UpdateAccessTokenClaimsOnRefresh = true,
                     RedirectUris = new List<string>()
                     {
-                        "https://localhost:44355/signin-oidc"
+                        "http://localhost:12060/signin-oidc"
                     },
                     PostLogoutRedirectUris = new List<string>()
                     {
-                        "https://localhost:44355/signout-callback-oidc"
+                        "http://localhost:12060/signout-callback-oidc"
                     },
                     AllowedScopes =
                     {

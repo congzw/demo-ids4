@@ -25,6 +25,7 @@ namespace NbSites.Web
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddImageGallery();
 
+            services.AddMyAuth();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -36,8 +37,8 @@ namespace NbSites.Web
             }
 
             app.UseMyStaticFiles(_env, _logger);
-            
-            //do not forget to add[Area("Foo")] in controllers of area
+
+            app.UseMyAuth();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -16,6 +16,12 @@
         <li>
             <a asp-controller="Home" asp-action="Images">Images</a>
         </li>
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li>
+                <a asp-controller="Authorization" asp-action="Logout">Logout</a>
+            </li>
+        }
     </ul>
     <hr/>
     @RenderBody()

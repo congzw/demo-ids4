@@ -3,9 +3,29 @@
     ViewBag.Title = "Images";
 }
 <h2>ImageGallery Images</h2>
-@foreach (var item in Model.Images)
-{
-    <div class="col-xs-3">
-        <img src="@item.Url" alt="@item.Title" />
-    </div>
-}
+
+
+@*<div class="row">
+    @foreach (var item in Model.Images)
+    {
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="@item.Url" alt="@item.Title" title="@item.Title" />
+            </a>
+        </div>
+    }
+</div>*@
+
+<div class="row">
+    @foreach (var item in Model.Images)
+    {
+        <div class="col-xs-6 col-md-3">
+            <div class="thumbnail">
+                <img src="@item.Url" alt="@item.Title" title="@item.Title"/>
+                <div class="caption text-center">
+                    <h3>@item.Title</h3>
+                </div>
+            </div>
+        </div>
+    }
+</div>

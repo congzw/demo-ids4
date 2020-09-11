@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/content/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+<div class="container">
+    <h2>@this.ViewContext.View.Path</h2>
+    <hr/>
+    <ul>
+        <li>
+            <a asp-controller="Home" asp-action="Index">Index</a>
+        </li>
+        <li>
+            <a asp-controller="Home" asp-action="Images">Images</a>
+        </li>
+    </ul>
+    <hr/>
+    @RenderBody()
+</div>
+</body>
+</html>

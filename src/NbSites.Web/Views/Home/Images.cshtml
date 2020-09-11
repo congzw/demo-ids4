@@ -1,0 +1,11 @@
+﻿@model NbSites.Web.Controllers.ImagesViewModel
+@{
+    ViewBag.Title = "Images";
+}
+<h2>ImageGallery Images</h2>
+@foreach (var item in Model.Images)
+{
+    <div class="col-xs-3">
+        <img src="@item.Url" alt="@item.Title" />
+    </div>
+}
